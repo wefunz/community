@@ -58,7 +58,7 @@
 		<dependency>
 			<groupId>org.flywaydb</groupId>
 			<artifactId>flyway-core</artifactId>
-			<version>5.1.1</version>
+			<version>6.2.4</version>
 		</dependency>
 		<dependency>
 			<groupId>com.h2database</groupId>
@@ -71,6 +71,16 @@
 			<version>2.1.1</version>
 		</dependency>
 
+		<!--		热部署-->
+		<!-- spring-boot-devtools热启动依赖包 start-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<optional>true</optional>
+			<scope>true</scope>
+		</dependency>
+		<!-- spring-boot-devtools热启动依赖包 end-->
+
 	</dependencies>
 
 	<build>
@@ -82,7 +92,7 @@
 			<plugin>
 				<groupId>org.flywaydb</groupId>
 				<artifactId>flyway-maven-plugin</artifactId>
-				<version>5.1.1</version>
+				<version>6.2.4</version>
 				<configuration>
 					<url>jdbc:h2:~/community</url>
 					<user>sa</user>

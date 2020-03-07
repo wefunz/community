@@ -9,7 +9,7 @@
 [spring](https://docs.spring.io/spring-boot/docs/)
 
 ##工具
-
+[flyway](https://flywaydb.org/)
 
 ##脚本
 ```sql
@@ -26,4 +26,8 @@ create table USER
 );
 
 
+```
+
+```bash
+mvn flyway:migrate
 ```
